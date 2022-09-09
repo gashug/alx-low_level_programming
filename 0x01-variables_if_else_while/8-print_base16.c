@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+/**
+ * main - Entry Point
+ *
+ * Desription:
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
+{
+	int i;
+
+	for (i = 0; i < 48; i++)
+		if (i < 10)
+			putchar(i + '0');
+		else if (i > 41)
+			putchar(i -10 + 'A');
+
+	return (0);
+}
