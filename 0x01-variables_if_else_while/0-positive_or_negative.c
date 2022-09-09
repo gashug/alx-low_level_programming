@@ -1,13 +1,16 @@
 #include <stdlib.h>
-
 #include <time.h>
-
-/* more headers goes there */
 #include <stdio.h>
 
 
-/* Description: using if statement */
-/* main - Entry point*/
+/* 
+ * Description: using if statement
+ *
+ * main - determine if a number is positive or negative
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 
 {
