@@ -3,7 +3,7 @@
 #include <time.h>
 
 /* more headers goes there */
-
+#include <stdio.h>
 
 
 /* betty style doc for function main goes there
@@ -23,7 +23,7 @@ int main(void)
 	printf("is zero\n");
 	}
 	else {
-	printf("is negative\n");	
+	printf("is negative\n");
+	}
 	return (0);
-
 }
