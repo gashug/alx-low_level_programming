@@ -7,7 +7,7 @@
 
 
 /* Description: using if statement */
-
+/* main - Entry point*/
 int main(void)
 
 {
