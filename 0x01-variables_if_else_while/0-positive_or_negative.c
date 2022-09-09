@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 
-/* 
- * Description: using if statement
+/*
+ * main - Entry Point
  *
- * main - determine if a number is positive or negative
+ * Description: using if statement
  *
  * Return: Always 0 (Success)
  */
