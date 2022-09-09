@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 
-/*
+/**
  * main - Entry Point
  *
  * Description: using if statement
