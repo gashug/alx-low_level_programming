@@ -3,7 +3,7 @@
 /**
  * main - Entry Point
  *
- * Desription:printing the alphabet in lowercase, and then in uppercase using putchar
+ * Desription:
  *
  * Return: Always 0 (Success)
  */
@@ -14,7 +14,11 @@ int main(void)
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 		putchar(ch);
+
 	for (ch = 'A'; ch <= 'Z'; ch++)
-		putchar(ch);
+	       putchar(ch);
+
+	putchar(10);
+
 	return (0);
-}
+}	
