@@ -31,8 +31,8 @@ int main(void)
 			j++;
 		}
 		i++;
-		putchar(32);
 	}
+	putchar(10);
 
 	return (0);
 }
