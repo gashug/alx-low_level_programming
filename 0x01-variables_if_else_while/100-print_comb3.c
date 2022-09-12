@@ -30,7 +30,8 @@ int main(void)
 			}
 			j++;
 		}
-		i ++;
+		i++;
+		putchar(32);
 	}
 
 	return (0);

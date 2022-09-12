@@ -28,16 +28,16 @@ int main(void)
 				putchar(j);
 				putchar(k);
 
-				if (i < 56 || j < 57 || k < 58)
+				if (i < 55 || j < 56 || k < 57)
 				{
 					putchar(44);
 					putchar(32);
 				}
-				k ++;
+				k++;
 			}
-			j ++;
+			j++;
 		}
-		i ++;
+		i++;
 	}
 
 	return (0);
