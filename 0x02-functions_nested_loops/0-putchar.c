@@ -8,15 +8,17 @@
  * Return: 0 (Success)
  */
 
-int main(void)
+int main()
 {
-	int i;
-	char c[10] = "_putchar";
-
-	for (i = 0; i < 8; i++)
-		_putchar(c[i]);
-
-	_putchar(10);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+  	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
 	return (0);
 }
