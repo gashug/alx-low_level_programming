@@ -13,7 +13,6 @@ void jack_bauer(void)
 	while (k <= 50)
 	{
 		int l = 48;
-		
 		while (l <= 57)
 		{
 			int i = 48;
