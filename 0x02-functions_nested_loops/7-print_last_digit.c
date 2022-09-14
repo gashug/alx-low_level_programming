@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_last_digit - entry point
  *
  * Description: prints _putchar
  *

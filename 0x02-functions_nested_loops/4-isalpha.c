@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * _isalpha - entry point
  *
  * Description: prints _putchar
  *
@@ -10,9 +10,9 @@
 
 int _isalpha(int c)
 {
-        if ((c >= 'a' || c>= 'A') && (c <= 'z' || c<= 'Z'))
-                return (1);
-
-        else
-                return (0);
+	if ((c >= 'a' || c >= 'A') && (c <= 'z' || c <= 'Z'))
+		return (1);
+	
+	else
+		return (0);
 }
