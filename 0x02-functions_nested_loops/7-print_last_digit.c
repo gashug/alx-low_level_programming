@@ -4,7 +4,7 @@
  * print_last_digit - entry point
  *
  * Description: prints _putchar
- *
+ * n:stands in for integer 
  * Return: 0 (Success)
  */
 

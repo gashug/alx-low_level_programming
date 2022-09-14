@@ -5,7 +5,7 @@
  *
  * Description: prints _putchar
  *
- * Return: 0 (Success)
+ * Return: 1 if n greater than 0, -1 if n is negative , otherwise 0
  */
 
 int print_sign(int n)

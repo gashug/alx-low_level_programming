@@ -5,7 +5,7 @@
  *
  * Description: prints _putchar
  *
- * Return: 0 (Success)
+ * Return 1 if c is lowercase, otherwise 0
  */
 
 int _islower(int c)

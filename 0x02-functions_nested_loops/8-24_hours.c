@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * jack_bauer - entry point
  *
  * Description: prints _putchar
  *
@@ -10,24 +10,36 @@
 
 void jack_bauer(void)
 {
-	int i, j, k, l;
+	int k = 48;
 
-	for (i = 0; i < 10; i++)
+	while (k <= 50)
 	{
-		for (j = 0; j < 6; j++)
+		int l = 48;
+		while (l <= 57)
 		{
-			for (k = 0; k < 10; k++)
-			{
-				for (l = 0; l < 3; l++)
-				{
-					_putchar(l);
-					_putchar(k);
-					_putchar(':');
-					_putchar(j);
-					_putchar(i);
-				}
-			}
-		}
-	}
+			int i = 48;
 
+			while (i <= 53)
+			{
+				int j = 48;
+				while (j <= 57)
+				{
+					if (k >= 50 && l >= 52)
+						break;
+
+					_putchar(k);
+					_putchar(l);
+					_putchar(':');
+					_putchar(i);
+					_putchar(j);
+					_putchar('\n');
+					
+					j++;
+				}
+				i++;
+			}
+			l++;
+		}
+		k++;
+	}
 }

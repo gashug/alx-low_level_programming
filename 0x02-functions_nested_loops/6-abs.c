@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * _abs - entry point
+ * _abs: entry point
  *
  * Description: prints _putchar
+ * n: checking integer
  *
  * Return: 0 (Success)
  */
