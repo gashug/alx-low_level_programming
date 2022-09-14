@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Description: prints _putchar
+ * Description: prints alphabet in lowercase
  *
  * Return: 0 (Success)
  */
