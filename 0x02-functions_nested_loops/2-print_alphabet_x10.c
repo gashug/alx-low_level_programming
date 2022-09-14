@@ -2,6 +2,7 @@
 
 /**
  * print_alphabet_x10 - entry point
+ * print_alphabet - borrowed
  *
  * Description: prints _putchar
  *
