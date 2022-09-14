@@ -19,7 +19,7 @@ void jack_bauer(void)
 			while (i <= 53)
 			{
 				int j = 48;
-				
+
 				while (j <= 57)
 				{
 					if (k >= 50 && l >= 52)
@@ -30,7 +30,7 @@ void jack_bauer(void)
 					_putchar(':');
 					_putchar(i);
 					_putchar(j);
-					_putchar('\n');	
+					_putchar('\n');
 					j++;
 				}
 				i++;
