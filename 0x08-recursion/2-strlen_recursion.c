@@ -2,7 +2,6 @@
 /**
  * _strlen_recursion - finds the length of a string.
  * @s: pointer to string
- * @n: used as a counter
  * Return: length of string
  */
 
