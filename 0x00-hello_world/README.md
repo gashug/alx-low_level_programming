@@ -12,6 +12,8 @@
 
 6-size.c - program that prints the size of various data types.
 
-100-intel - script that generates assembly code of a C code and saves in an output file.
+100-intel - script that generates the assembly code (Intel syntax) of a C code and saves it in an output file.
 
-101-quote.c - program that prints a statement exactly.
+101-quote.c -  program that prints without using any functions listed in the NAME section of the man (3) printf or man (3) puts
+
+
