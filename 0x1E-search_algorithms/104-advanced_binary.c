@@ -1,85 +1,45 @@
 #include "search_algos.h"
 
 /**
- * print_subarray - prints a subarray
- * @array: pointer to array
- * @first: index of first element to print
- * @last: index of last element to print
+ * advanced_binary - Searches for a value in a sorted array of integers.
+ * @array: A pointer to the first element of the array to search in.
+ * @size: The number of elements in the array.
+ * @value: The value to search for.
+ *
+ * Return: The index where the value is located or -1 if not found.
  */
-
-void print_subarray(int *array, size_t first, size_t last)
-{
-	size_t i = 0;
-
-	printf("Searching in array: ");
-	for (i = first; i < last; i++)
-	{
-		printf("%d, ", array[i]);
-	}
-	printf("%d\n", array[i]);
-}
-
-
-/**
- * bin_search_mod - search for val in sorted int array using Binary search alg
- * @array: pointer to int array
- * @value: value to find
- * @first: first index of subarray
- * @last: last index of subarray
- * Return: index of first match or -1 if not found
- */
-
-int bin_search_mod(int *array, int value, int first, int last)
-{
-	size_t mid = 0;
-
-	while (first <= last)
-	{
-		print_subarray(array, first, last);
-		mid = (first + last) / 2;
-		if (array[mid] > value)
-		{
-			last = mid - 1;
-			bin_search_mod(array, value, first, last);
-
-		}
-		else if (array[mid] < value)
-		{
-			first = mid + 1;
-			bin_search_mod(array, value, first, last);
-		}
-		else
-		{
-			if (array[mid - 1] != value)
-				return (mid);
-			while (array[mid] == value)
-			{
-				mid -= 1;
-			}
-			return (mid + 1);
-		}
-	}
-	return (-1);
-}
-
-
-/**
- * advanced_binary - search for value in sorted int array w Binary search alg
- * @array: pointer to int array
- * @size: size of array
- * @value: value to find
- * Return: index of first match or -1 if not found
- */
-
 int advanced_binary(int *array, size_t size, int value)
 {
-	size_t first = 0;
-	size_t last = 0;
+	size_t i;
+	int result;
 
-	if (array == NULL || size == 0)
+	if (!array || size == 0)
 		return (-1);
-
-	last = size - 1;
-	return (bin_search_mod(array, value, first, last));
-
+	printf("Searching in array: ");
+	for (i = 0; i < size; i++)
+	{
+		printf("%d", array[i]);
+		if (i < size - 1)
+			printf(", ");
+		else
+			printf("\n");
+	}
+	i = size / 2;
+	if (array[i] == value)
+	{
+		if (size == 1 || array[i - 1] < value)
+			return (i);
+	}
+	if (size == 1)
+		return (-1);
+	if (array[i] < value)
+	{
+		result = advanced_binary(array + i + 1, size - i - 1, value);
+		if (result == -1)
+			return (-1);
+		return (i + 1 + result);
+	}
+	else
+		return (advanced_binary(array, i, value));
+	return (-1);
 }
